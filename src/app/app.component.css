@@ -1,0 +1,98 @@
+/* Reset styles */
+body, ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+/* Global link styles */
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* Remove list styles */
+ul, li {
+  list-style-type: none;
+  list-style-image: none;
+}
+
+/* Job card styles */
+li.job-card {
+  border: 1px solid #e6e6e3;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #ffffff;
+}
+
+/* Paragraph inside job card */
+li.job-card p {
+  margin: 5px;
+}
+
+/* Last child margin for job card */
+li.job-card:last-child {
+  margin-bottom: 20px;
+}
+
+/* Title inside job card */
+li.job-card .list-title {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* Background color for the body */
+body {
+  background-color: #f5f5ee;
+}
+
+/* Container for job listings */
+.job-listing-container {
+  max-width: 80%;
+  margin: auto;
+  font-family: "Helvetica Neue", serif;
+}
+
+/* Responsive container width */
+@media screen and (max-width: 768px) {
+  .job-listing-container {
+    max-width: 95%;
+  }
+}
+
+/* Button styles */
+button {
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Primary button styles */
+button.primary-btn {
+  background: #fd6602;
+  color: #ffffff;
+  border: none;
+}
+
+/* Hover effect for primary button */
+button.primary-btn:hover {
+  background: #f0060f;
+  color: #f3fef0;
+}
+
+section.section-action button {
+  margin-bottom: 20px;
+}
+
+p.post-details {
+  color: #515151;
+  font-size: 14px;
+}
+
+/* Section title styles */
+.section-title {
+  color: #fd6602;
+  font-weight: 600;
+  font-size: 20px;
+}

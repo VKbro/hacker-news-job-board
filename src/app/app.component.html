@@ -1,0 +1,28 @@
+<div class="job-listing-container">
+  <section class="section-title">
+    <p class="heading">Hacker News Jobs Board</p>
+  </section>
+
+  <section class="section-content">
+    <ul class="job-listing">
+      <li class="job-card" *ngFor="let job of jobsToBeShown">
+        <p class="list-title">
+          <a *ngIf="job.url; else noURL" href="{{ job.url }}">
+            {{ job.title }}
+          </a>
+          <ng-template #noURL> {{ job.title }}</ng-template>
+        </p>
+        <p class="post-details">
+          <span>By {{ job.by }} </span>
+          <span>{{ job.time | dateTimeFormat }}</span>
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section-action">
+    <ng-container *ngIf="!shouldDisableLoadMoreButton">
+      <button class="primary-btn" (click)="loadMoreJobs()" [disabled]="false">Load more jobs</button>
+    </ng-container>
+  </section>
+</div>
